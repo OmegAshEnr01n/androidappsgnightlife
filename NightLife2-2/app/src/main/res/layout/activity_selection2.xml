@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/background_grey">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="normal"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        style="@xml/shadow"
+
+        android:text="Choose locations" />
+
+    <ListView
+        android:id="@+id/listView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/getStarted"
+        android:layout_below="@id/textView3"
+        android:paddingTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"></ListView>
+
+    <Button
+        android:id="@+id/getStarted"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:background="@drawable/blackbutton"
+        android:onClick="onClickButton"
+        android:paddingLeft="50dp"
+        android:textColor="@color/white"
+        android:paddingRight="50dp"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        android:elevation="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>
